@@ -1,0 +1,39 @@
+package WebAutomationTest;
+
+import java.awt.Window;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class Frame {
+  @Test
+  public void SwitchFrame() throws Exception {
+	  WebDriverManager.chromedriver().setup();
+      WebDriver driver =new ChromeDriver();
+      driver.get("http://seleniumpractise.blogspot.com/");
+      driver.manage().window().maximize();
+	  try
+	  {
+	      driver.findElement(By.xpath("//a[@href='http://seleniumpractise.blogspot.com/2017/']//preceding::span[@class='zippy']")).click();
+	      driver.findElement(By.xpath("//li[@class='archivedate expanded']//ul[4]//li[1]//a[1]//span[1]")).click();
+	      JavascriptExecutor je= (JavascriptExecutor) driver;
+	      je.executeScript("window.scrollBy(0,200)");
+	      driver.findElement(By.linkText("Frames in Selenium WebDriver")).click();
+	      driver.switchTo().frame(0);
+	      //(driver.findElement(By.xpath("//iframe[@id='google']")));
+	  }
+	  catch(Exception e)
+	  {
+		  System.out.println(e);
+	  }
+	 /* finally
+	  {
+		  driver.quit();
+	  }*/
+  }
+}

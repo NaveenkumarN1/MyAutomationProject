@@ -1,0 +1,9 @@
+package WebAutomationTest;
+
+import org.testng.annotations.Test;
+
+public class Frame {
+  @Test
+  public void f() {
+  }
+}

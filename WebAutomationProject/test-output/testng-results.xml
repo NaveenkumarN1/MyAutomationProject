@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="61923" started-at="2018-12-07T14:18:10Z" finished-at="2018-12-07T14:19:12Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="61923" started-at="2018-12-07T14:18:10Z" finished-at="2018-12-07T14:19:12Z">
+      <class name="WebAutomationTest.Frame">
+        <test-method status="PASS" signature="SwitchFrame()[pri:0, instance:WebAutomationTest.Frame@6d4b1c02]" name="SwitchFrame" duration-ms="61898" started-at="2018-12-07T19:48:10Z" finished-at="2018-12-07T19:49:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SwitchFrame -->
+      </class> <!-- WebAutomationTest.Frame -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
