@@ -21,24 +21,33 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Frame {
-  @Test
+	public WebDriver driver;
+    @BeforeTest
+    public void launchBrowser()
+    {
+    WebDriverManager.chromedriver().setup();
+   driver =new ChromeDriver();
+		driver.get("http://www.way2automation.com/demo.html");
+	  //driver.findElement(By.xpath("http://www.way2automation.com/demo.html")).click();
+	  driver.manage().window().maximize();
+}
+	@Test
   public void SwitchFrame() {
+		
 		
 	 /* System.setProperty("webdriver.gecko.driver","D:\\Learning\\Software\\geckodriver-v0.23.0-win64\\geckodriver.exe");
 	  FirefoxOptions options = new FirefoxOptions();
 		options.setBinary("C:\\Program Files\\Mozilla Firefox\\Firefox.exe");
 		options.setLogLevel(FirefoxDriverLogLevel.TRACE);*/
 		//WebDriver driver =  new FirefoxDriver(options);
-	 WebDriverManager.chromedriver().setup();
-     WebDriver driver =new ChromeDriver();
-		driver.get("http://www.way2automation.com/demo.html");
-	  //driver.findElement(By.xpath("http://www.way2automation.com/demo.html")).click();
-	  driver.manage().window().maximize();
+	
 	  JavascriptExecutor je =(JavascriptExecutor) driver;
 	  //je.executeScript("window.scrollBy(0,600)");
 	  //driver.findElement(By.xpath("//h2[contains(text(),'Frames and Windows')]")).click();
@@ -120,8 +129,17 @@ public class Frame {
 	  driver.switchTo().frame(driver.findElement(By.xpath("/html/frameset/frame[2]")));
 	  String Str=driver.findElement(By.cssSelector("body:nth-child(2) div:nth-child(2) > p:nth-child(1)")).getText();
 	  System.out.println(Str);
-	  Assert.assertEquals(Str, "window");
+	  Assert.assertEquals(Str, "Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text.");
 	  //driver.switchTo().frame(1);
 	  //je.executeScript("window.scrollBy(0,200)");
+	}
+	   @AfterTest
+	    public void closeBrowser()
+	    {
+		   
+	      driver.quit();
+	    }
+	
   }
-}
+
+
