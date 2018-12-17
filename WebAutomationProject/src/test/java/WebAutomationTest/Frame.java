@@ -20,6 +20,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -119,6 +120,7 @@ public class Frame {
 	  driver.switchTo().frame(driver.findElement(By.xpath("/html/frameset/frame[2]")));
 	  String Str=driver.findElement(By.cssSelector("body:nth-child(2) div:nth-child(2) > p:nth-child(1)")).getText();
 	  System.out.println(Str);
+	  Assert.assertEquals(Str, "window");
 	  //driver.switchTo().frame(1);
 	  //je.executeScript("window.scrollBy(0,200)");
   }
