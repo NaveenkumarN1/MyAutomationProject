@@ -1,0 +1,30 @@
+package Controls;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class CoreBase {
+	
+	public WebDriver driver;
+	@BeforeTest
+	public void launchBrowser()
+	{
+		 WebDriverManager.chromedriver().setup();
+		   driver =new ChromeDriver();
+				driver.get("http://www.way2automation.com/demo.html");
+			  //driver.findElement(By.xpath("http://www.way2automation.com/demo.html")).click();
+			  driver.manage().window().maximize();
+	}
+	
+	 @AfterTest
+	    public void closeBrowser()
+	    {
+		   
+	      driver.quit();
+	    }
+
+}
