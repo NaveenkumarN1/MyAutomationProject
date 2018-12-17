@@ -5,6 +5,8 @@
     <classes>
       <class name="WebAutomationTest.Frame">
         <methods>
+          <include name="closeBrowser"/>
+          <include name="launchBrowser"/>
           <include name="SwitchFrame"/>
         </methods>
       </class> <!-- WebAutomationTest.Frame -->

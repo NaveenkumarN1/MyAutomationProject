@@ -2,15 +2,23 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="61923" started-at="2018-12-07T14:18:10Z" finished-at="2018-12-07T14:19:12Z">
+  <suite name="Default suite" duration-ms="54900" started-at="2018-12-17T09:30:50Z" finished-at="2018-12-17T09:31:45Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="61923" started-at="2018-12-07T14:18:10Z" finished-at="2018-12-07T14:19:12Z">
+    <test name="Default test" duration-ms="54900" started-at="2018-12-17T09:30:50Z" finished-at="2018-12-17T09:31:45Z">
       <class name="WebAutomationTest.Frame">
-        <test-method status="PASS" signature="SwitchFrame()[pri:0, instance:WebAutomationTest.Frame@6d4b1c02]" name="SwitchFrame" duration-ms="61898" started-at="2018-12-07T19:48:10Z" finished-at="2018-12-07T19:49:12Z">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:WebAutomationTest.Frame@548e7350]" name="launchBrowser" is-config="true" duration-ms="25406" started-at="2018-12-17T15:00:50Z" finished-at="2018-12-17T15:01:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="SwitchFrame()[pri:0, instance:WebAutomationTest.Frame@548e7350]" name="SwitchFrame" duration-ms="27869" started-at="2018-12-17T15:01:15Z" finished-at="2018-12-17T15:01:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SwitchFrame -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:WebAutomationTest.Frame@548e7350]" name="closeBrowser" is-config="true" duration-ms="1576" started-at="2018-12-17T15:01:43Z" finished-at="2018-12-17T15:01:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
       </class> <!-- WebAutomationTest.Frame -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
