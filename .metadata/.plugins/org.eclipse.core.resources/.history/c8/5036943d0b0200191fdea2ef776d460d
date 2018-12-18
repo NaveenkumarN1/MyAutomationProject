@@ -1,0 +1,20 @@
+package Controls;
+
+import com.relevantcodes.extentreports.ExtentReports;
+
+public class ReportManager {
+	
+public static ExtentReports extent;
+
+public static ExtentReports reports()
+{
+	if (extent==null)
+	{
+		String workingDir=System.getProperty("D:\\Learning\\GIT\\WebAutomation\\WebAutomationProject\\Reports\\");
+		extent=new ExtentReports(workingDir+"results.html",true);	
+	}
+	return extent;
+}
+	
+
+}

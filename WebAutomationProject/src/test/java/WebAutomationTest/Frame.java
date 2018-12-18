@@ -25,11 +25,18 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
+
+//import com.relevantcodes.extentreports.ExtentTest;
+//import com.relevantcodes.extentreports.LogStatus;
+
 import Controls.CoreBase;
+import Controls.ReportManager;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Frame extends CoreBase {
-	
+	ExtentTest logger;
 	@Test
   public void SwitchFrame() throws Exception {
 		
@@ -39,13 +46,16 @@ public class Frame extends CoreBase {
 		options.setBinary("C:\\Program Files\\Mozilla Firefox\\Firefox.exe");
 		options.setLogLevel(FirefoxDriverLogLevel.TRACE);*/
 		//WebDriver driver =  new FirefoxDriver(options);
-	
+		
+	   logger=ReportManager.reports().createTest("FRAME");
+	  
 	  JavascriptExecutor je =(JavascriptExecutor) driver;
 	  //je.executeScript("window.scrollBy(0,600)");
 	  //driver.findElement(By.xpath("//h2[contains(text(),'Frames and Windows')]")).click();
 	 String Parenthandle=driver.getWindowHandle();
 	  driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	  driver.findElement(By.xpath("//a[contains(text(),'Registration')]")).click();
+	  logger.log(Status.INFO,"button clicked");
 	  driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 	  Set<String> handles= driver.getWindowHandles();
 	  for(String handle1:handles)
@@ -86,7 +96,7 @@ public class Frame extends CoreBase {
 	  driver.findElement(By.xpath("//div[@id='login']//input[@name='username']")).sendKeys("988632004");
 	  driver.findElement(By.xpath("//div[@id='login']//input[@name='password']")).sendKeys("naveen@1");
 	  driver.findElement(By.xpath("//div[@id='login']//input[@value='Submit']")).click();
-	  
+	  logger.log(Status.INFO, "login sucessfull");
 	  driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 	 //je.executeScript("window.scrollBy(0,300)");
 	  WebElement ele=driver.findElement(By.xpath("//h2[contains(text(),'Frames and Windows')]"));
@@ -123,6 +133,7 @@ public class Frame extends CoreBase {
 	  this.takeSnapShot(driver,"D://Learning/GIT/WebAutomation/WebAutomationProject/ScreenShots/");
 	  System.out.println(Str);
 	  Assert.assertEquals(Str, "Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text. Demo text.");
+	  logger.log(Status.PASS, "Testcase passed");
 	  //driver.switchTo().frame(1);
 	  //je.executeScript("window.scrollBy(0,200)");
 	}

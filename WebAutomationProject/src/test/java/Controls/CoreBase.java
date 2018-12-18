@@ -32,7 +32,7 @@ public class CoreBase {
 	 @AfterTest
 	    public void closeBrowser()
 	    {
-		   
+		   ReportManager.extent.flush();
 	      driver.quit();
 	    }
 	 
