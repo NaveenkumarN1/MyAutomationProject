@@ -1,7 +1,8 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="WebAutomationProject">
  <test name="WebAutomationTest">
  <classes>
- <class name="WebAutomationProject.WebAutomationTest.Frame" />
+ <class name="WebAutomationTest.Frame" />
  </classes>
  </test>
 </suite>

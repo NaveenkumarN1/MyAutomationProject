@@ -55,7 +55,7 @@ public class Frame extends CoreBase {
 	 String Parenthandle=driver.getWindowHandle();
 	  driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	  driver.findElement(By.xpath("//a[contains(text(),'Registration')]")).click();
-	  logger.log(Status.INFO,"button clicked");
+	 logger.log(Status.INFO,"button clicked");
 	  driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 	  Set<String> handles= driver.getWindowHandles();
 	  for(String handle1:handles)
