@@ -1,0 +1,7 @@
+<suite name="WebAutomationProject">
+ <test name="WebAutomationTest">
+ <classes>
+ <class name="WebAutomationProject.WebAutomationTest.Frame" />
+ </classes>
+ </test>
+</suite>
