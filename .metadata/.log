@@ -20,3 +20,21 @@ Created Time: 2018-12-28 19:45:54.037
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-28 19:45:54.742
 !MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-28 19:50:55.642
+!MESSAGE The POM for com.sun.xml.bind:jaxb-core:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-28 19:50:55.658
+!MESSAGE The POM for com.sun.xml.bind:jaxb-impl:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-28 19:50:55.658
+!MESSAGE The POM for com.sun.xml.bind:jaxb-jxc:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-28 19:50:55.673
+!MESSAGE The POM for com.sun.xml.bind:jaxb-xjc:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-28 19:50:56.581
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-28 19:50:56.596
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
