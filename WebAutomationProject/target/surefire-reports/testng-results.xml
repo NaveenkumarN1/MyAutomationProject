@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="WebAutomationProject" duration-ms="63005" started-at="2018-12-28T15:05:58Z" finished-at="2018-12-28T15:07:01Z">
+  <suite name="WebAutomationProject" duration-ms="80417" started-at="2019-01-01T04:47:08Z" finished-at="2019-01-01T04:48:28Z">
     <groups>
     </groups>
-    <test name="WebAutomationTest" duration-ms="63005" started-at="2018-12-28T15:05:58Z" finished-at="2018-12-28T15:07:01Z">
+    <test name="WebAutomationTest" duration-ms="80417" started-at="2019-01-01T04:47:08Z" finished-at="2019-01-01T04:48:28Z">
       <class name="WebAutomationTest.Frame">
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:WebAutomationTest.Frame@61a485d2]" name="launchBrowser" is-config="true" duration-ms="30863" started-at="2018-12-28T20:35:58Z" finished-at="2018-12-28T20:36:29Z">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:WebAutomationTest.Frame@1efbd816]" name="launchBrowser" is-config="true" duration-ms="47928" started-at="2019-01-01T10:17:08Z" finished-at="2019-01-01T10:17:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="SwitchFrame()[pri:0, instance:WebAutomationTest.Frame@61a485d2]" name="SwitchFrame" duration-ms="30778" started-at="2018-12-28T20:36:29Z" finished-at="2018-12-28T20:37:00Z">
+        <test-method status="PASS" signature="SwitchFrame()[pri:0, instance:WebAutomationTest.Frame@1efbd816]" name="SwitchFrame" duration-ms="30358" started-at="2019-01-01T10:17:56Z" finished-at="2019-01-01T10:18:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SwitchFrame -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:WebAutomationTest.Frame@61a485d2]" name="closeBrowser" is-config="true" duration-ms="1345" started-at="2018-12-28T20:37:00Z" finished-at="2018-12-28T20:37:01Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:WebAutomationTest.Frame@1efbd816]" name="closeBrowser" is-config="true" duration-ms="2110" started-at="2019-01-01T10:18:26Z" finished-at="2019-01-01T10:18:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->

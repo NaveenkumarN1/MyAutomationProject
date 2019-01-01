@@ -1,7 +1,0 @@
-<suite name="softwaretestingmaterial">
- <test name="testngTest">
- <classes>
- <class name="softwareTestingMaterial.STMTestNGClass" />
- </classes>
- </test>
-</suite>

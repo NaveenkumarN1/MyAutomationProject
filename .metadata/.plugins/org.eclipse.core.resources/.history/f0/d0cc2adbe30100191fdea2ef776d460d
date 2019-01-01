@@ -1,7 +1,0 @@
-<suite name="WebAutomationProject">
- <test name="WebAutomationTest">
- <classes>
- <class name="Frame.java" />
- </classes>
- </test>
-</suite>
