@@ -30,12 +30,8 @@
     </configuration>
       </plugin>
 	</plugins>
-	
-	
   </build>
   
-
-
   <dependencies>
   
     <!-- TestNG -->
@@ -62,7 +58,6 @@
     <version>3.141.5</version>
 </dependency>
   
-
   
   <!-- Drivers -->
   <dependency>
