@@ -11,6 +11,8 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
@@ -23,13 +25,18 @@ public class CoreBase {
 	public void launchBrowser()
 	{
 		 WebDriverManager.chromedriver().setup();
-		   driver =new ChromeDriver();
-				driver.get("http://www.way2automation.com/demo.html");
+		 DesiredCapabilities cap = new DesiredCapabilities();
+	        cap.setJavascriptEnabled(true);
+	        ChromeOptions opt = new ChromeOptions();
+	        opt.merge(cap);
+		   driver =new ChromeDriver(opt);
+				//driver.get("http://www.way2automation.com/demo.html");
+		   driver.get("http://automationpractice.com/index.php");
 			  //driver.findElement(By.xpath("http://www.way2automation.com/demo.html")).click();
 			  driver.manage().window().maximize();
 	}
 	
-	 @AfterTest
+	// @AfterTest
 	   public void closeBrowser()
 	    {
 		   ReportManager.extent.flush();

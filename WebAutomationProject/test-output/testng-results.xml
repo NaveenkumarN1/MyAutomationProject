@@ -2,24 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="50135" started-at="2018-12-27T15:24:06Z" finished-at="2018-12-27T15:24:56Z">
+  <suite name="Default suite" duration-ms="42640" started-at="2019-02-05T10:14:42Z" finished-at="2019-02-05T10:15:25Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="50135" started-at="2018-12-27T15:24:06Z" finished-at="2018-12-27T15:24:56Z">
-      <class name="WebAutomationTest.Frame">
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:WebAutomationTest.Frame@f6c48ac]" name="launchBrowser" is-config="true" duration-ms="21000" started-at="2018-12-27T20:54:06Z" finished-at="2018-12-27T20:54:27Z">
+    <test name="Default test" duration-ms="42640" started-at="2019-02-05T10:14:42Z" finished-at="2019-02-05T10:15:25Z">
+      <class name="WebAutomationTest.MouseHouver">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:WebAutomationTest.MouseHouver@73ad2d6]" name="launchBrowser" is-config="true" duration-ms="28974" started-at="2019-02-05T15:44:42Z" finished-at="2019-02-05T15:45:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="SwitchFrame()[pri:0, instance:WebAutomationTest.Frame@f6c48ac]" name="SwitchFrame" duration-ms="26832" started-at="2018-12-27T20:54:27Z" finished-at="2018-12-27T20:54:54Z">
+        <test-method status="PASS" signature="houver()[pri:0, instance:WebAutomationTest.MouseHouver@73ad2d6]" name="houver" duration-ms="13645" started-at="2019-02-05T15:45:11Z" finished-at="2019-02-05T15:45:25Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SwitchFrame -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:WebAutomationTest.Frame@f6c48ac]" name="closeBrowser" is-config="true" duration-ms="2265" started-at="2018-12-27T20:54:54Z" finished-at="2018-12-27T20:54:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- WebAutomationTest.Frame -->
+        </test-method> <!-- houver -->
+      </class> <!-- WebAutomationTest.MouseHouver -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

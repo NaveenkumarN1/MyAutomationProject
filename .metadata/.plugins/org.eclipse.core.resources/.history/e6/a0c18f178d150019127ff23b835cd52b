@@ -1,0 +1,9 @@
+package WebAutomationTest;
+
+import org.testng.annotations.Test;
+
+public class Resizable {
+  @Test
+  public void f() {
+  }
+}

@@ -3,6 +3,8 @@
  <test name="WebAutomationTest">
  <classes>
  <class name="WebAutomationTest.Frame" />
+  <class name="WebAutomationTest.Window" />
+   <class name="WebAutomationTest.LaunchBrowser" />
  </classes>
  </test>
 </suite>
