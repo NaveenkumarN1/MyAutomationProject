@@ -1,5 +1,15 @@
 Controls\CoreBase.class
+WebAutomationTest\SampleTest.class
 Controls\ReportManager.class
-WebAutomationTest\Frame.class
+WebAutomationTest\DragAndDrop.class
+WebAutomationTest\FileComparision.class
+WebAutomationTest\WebTable.class
+WebAutomationTest\DropDown.class
+WebAutomationTest\MouseHouver.class
+WebAutomationTest\Droppable.class
+WebAutomationTest\SikuliTestPractice.class
+WebAutomationTest\Resizable.class
 WebAutomationTest\LaunchBrowser.class
 WebAutomationTest\Window.class
+WebAutomationTest\Frame.class
+WebAutomationTest\Selectable.class

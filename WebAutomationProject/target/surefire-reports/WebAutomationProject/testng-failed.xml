@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [WebAutomationProject]">
+  <test name="WebAutomationTest(failed)">
+    <classes>
+      <class name="WebAutomationTest.LaunchBrowser">
+        <methods>
+          <include name="BrowserTest"/>
+        </methods>
+      </class> <!-- WebAutomationTest.LaunchBrowser -->
+      <class name="WebAutomationTest.Frame">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="SwitchFrame"/>
+        </methods>
+      </class> <!-- WebAutomationTest.Frame -->
+    </classes>
+  </test> <!-- WebAutomationTest(failed) -->
+</suite> <!-- Failed suite [WebAutomationProject] -->

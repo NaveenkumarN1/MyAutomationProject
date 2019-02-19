@@ -136,6 +136,7 @@ public class Frame extends CoreBase {
 	  logger.log(Status.PASS, "Testcase passed");
 	  //driver.switchTo().frame(1);
 	  //je.executeScript("window.scrollBy(0,200)");
+	  
 	}
 	  
 	

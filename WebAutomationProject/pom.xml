@@ -4,7 +4,22 @@
   <artifactId>WebAutomationProject</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
- 
+  <properties>
+        <sikuli.core>1.0.0</sikuli.core>
+        <sikuli.api>1.2.0</sikuli.api>
+        
+       
+    </properties>
+   <repositories>
+                <repository>
+                        <id>JavaCV Maven</id>
+                        <url>http://maven2.javacv.googlecode.com/git/</url>
+                </repository>
+                <repository>
+                        <id>JavaCPP Maven</id>
+                        <url>http://maven2.javacpp.googlecode.com/git/</url>
+                </repository>
+        </repositories>
  <build>
         <defaultGoal>install</defaultGoal>
         <!-- Source directory configuration -->
@@ -31,8 +46,8 @@
       </plugin>
 	</plugins>
   </build>
-  
-  <dependencies>
+ 
+    <dependencies>
   
     <!-- TestNG -->
    <dependency>
@@ -115,5 +130,25 @@
     <artifactId>maven-plugin-api</artifactId>
     <version>3.6.0</version>
 </dependency>
+
+<dependency>
+            <groupId>org.sikuli</groupId>
+            <artifactId>sikuli-api</artifactId>
+            <version>${sikuli.api}</version>
+</dependency>
+   
+
+<dependency>
+        <groupId>org.apache.poi</groupId>
+        <artifactId>poi</artifactId>
+        <version>3.13</version>
+    </dependency>
+
+<dependency>
+        <groupId>org.apache.poi</groupId>
+        <artifactId>poi-ooxml</artifactId>
+        <version>3.13</version>
+ </dependency>
+
  </dependencies> 
 </project>

@@ -39,7 +39,7 @@ public class Selectable extends CoreBase {
 		  element.click();
 		 
 		  driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		  driver.findElement(By.xpath("//div[@id='login']//input[@name='username']")).sendKeys(Keys.SHIFT.END);
+		  driver.findElement(By.xpath("//div[@id='login']//input[@name='username']")).sendKeys("988632004");
 		  driver.findElement(By.xpath("//div[@id='login']//input[@name='password']")).sendKeys("naveen@1");
 		  driver.findElement(By.xpath("//div[@id='login']//input[@value='Submit']")).click();
 		 

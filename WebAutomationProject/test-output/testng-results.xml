@@ -1,21 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="0" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="42640" started-at="2019-02-05T10:14:42Z" finished-at="2019-02-05T10:15:25Z">
+  <suite name="Default suite" duration-ms="13" started-at="2019-02-19T13:48:21Z" finished-at="2019-02-19T13:48:21Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="42640" started-at="2019-02-05T10:14:42Z" finished-at="2019-02-05T10:15:25Z">
-      <class name="WebAutomationTest.MouseHouver">
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:WebAutomationTest.MouseHouver@73ad2d6]" name="launchBrowser" is-config="true" duration-ms="28974" started-at="2019-02-05T15:44:42Z" finished-at="2019-02-05T15:45:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="houver()[pri:0, instance:WebAutomationTest.MouseHouver@73ad2d6]" name="houver" duration-ms="13645" started-at="2019-02-05T15:45:11Z" finished-at="2019-02-05T15:45:25Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- houver -->
-      </class> <!-- WebAutomationTest.MouseHouver -->
+    <test name="Default test" duration-ms="13" started-at="2019-02-19T13:48:21Z" finished-at="2019-02-19T13:48:21Z">
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

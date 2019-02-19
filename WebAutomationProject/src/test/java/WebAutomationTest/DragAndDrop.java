@@ -65,7 +65,7 @@ public class DragAndDrop extends CoreBase{
 		  je.executeScript("arguments[0].scrollIntoView();",ele);
 		 // driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		  je.executeScript("arguments[0].click();", ele);
-		 
+	
 		  driver.findElement(By.xpath("//h2[contains(text(),'Draggable')]")).click();
 		  driver.findElement(By.xpath("//a[contains(text(),'Default functionality')]")).click();
 		  driver.switchTo().frame(driver.findElement(By.xpath("//*[@id=\"example-1-tab-1\"]/div/iframe")));
